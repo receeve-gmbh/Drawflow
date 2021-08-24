@@ -593,7 +593,7 @@ export default class Drawflow {
       if (event.shiftKey) {
         this.canvas_x = (event.deltaY < 0) ? this.canvas_x + (event.deltaY*-1) : this.canvas_x - event.deltaY;
       } else if (event.deltaX > 0 || event.deltaX < 0) {
-        this.canvas_x = (event.deltaX < 0) ? this.canvas_x + (event.deltaX*-1) : this.canvas_x - event.deltaX;
+        this.canvas_x = (event.deltaX > 0) ? this.canvas_x + (event.deltaX*-1) : this.canvas_x - event.deltaX;
       } else {
         this.canvas_y = (event.deltaY < 0) ? this.canvas_y + (event.deltaY*-1) : this.canvas_y - event.deltaY;
       }
