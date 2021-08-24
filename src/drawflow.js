@@ -578,6 +578,10 @@ export default class Drawflow {
     }
   }
 
+  transform() {
+    this.precanvas.style.transform = "translate("+this.canvas_x+"px, "+this.canvas_y+"px) scale("+this.zoom+")";
+  }
+
   zoom_enter(event, delta) {
     if (event.ctrlKey) {
       event.preventDefault();
